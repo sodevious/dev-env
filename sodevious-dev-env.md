@@ -22,6 +22,11 @@ For using rvm in current shell: `source /Users/nicoledominguez/.rvm/scripts/rvm`
 	"theme": "Soda Light.sublime-theme"
 }
 
+### sublime packages
+* install package manager
+* install LESS syntax
+* install "Tags"
+
 
 ### add git config
 * `git config --global user.name "Nicole Dominguez"`
