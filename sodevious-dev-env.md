@@ -15,6 +15,7 @@ For using rvm in current shell: `source /Users/nicoledominguez/.rvm/scripts/rvm`
 * `git config --global user.name "Nicole Dominguez"`
 * `git config --global user.email sodevious.net@gmail.com`
 
+
 ## Documentation & Instructions
 
 ### Python
@@ -38,6 +39,30 @@ They will install into the site-package directory
 See: https://github.com/Homebrew/homebrew/wiki/Homebrew-and-Python
 
 
+### muckrack & shorties
+`
+$ brew install python
+$ brew install mysql
+$ brew install libjpeg
+$ brew install libpng
+$ brew install redis
+$ brew install rabbitmq 
+`
+
+running servers
+
+`workon muckrack`
+`python manage.py runserver`
+
+
+### virtualenv
+
+`
+$ easy_install virtualenv
+$ easy_install pip
+$ pip install virtualenvwrapper
+`
+
 ### MySql
 
 A "/etc/my.cnf" from another install may interfere with a Homebrew-built
@@ -48,8 +73,10 @@ To connect:
 
 To have launchd start mysql at login:
     ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+    
 Then to load mysql now:
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+    
 Or, if you don't want/need launchctl, you can just run:
     mysql.server start
 
@@ -57,25 +84,25 @@ Or, if you don't want/need launchctl, you can just run:
 
 To have launchd start memcached at login:
     ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents
+    
 Then to load memcached now:
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
+    
 Or, if you don't want/need launchctl, you can just run:
     /usr/local/opt/memcached/bin/memcached
 
 ### rabbitmq
 
-Management Plugin enabled by default at http://localhost:15672
-
+Management Plugin enabled by default at v
 Bash completion has been installed to:
   /usr/local/etc/bash_completion.d
 
 To have launchd start rabbitmq at login:
     ln -sfv /usr/local/opt/rabbitmq/*.plist ~/Library/LaunchAgents
+    
 Then to load rabbitmq now:
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist
 Or, if you don't want/need launchctl, you can just run:
     rabbitmq-server
-
-### phantomjs
 
 ### node 
