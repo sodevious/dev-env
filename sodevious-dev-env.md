@@ -11,6 +11,18 @@ For using rvm in current shell: `source /Users/nicoledominguez/.rvm/scripts/rvm`
 ### add sublime text symlink
 `ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/.rvm/bin/subl`
 
+### sublime settings
+{
+	"font_size": 12.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"save_on_focus_lost": true,
+	"theme": "Soda Light.sublime-theme"
+}
+
+
 ### add git config
 * `git config --global user.name "Nicole Dominguez"`
 * `git config --global user.email sodevious.net@gmail.com`
