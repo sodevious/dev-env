@@ -53,6 +53,7 @@ running servers
 
 `workon muckrack`
 `python manage.py runserver`
+`python manage.py migrate`
 
 
 ### virtualenv
@@ -78,7 +79,8 @@ Then to load mysql now:
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
     
 Or, if you don't want/need launchctl, you can just run:
-    mysql.server start
+    `mysql.server start`
+    
 
 ### memcached
 
