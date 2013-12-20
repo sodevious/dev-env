@@ -66,12 +66,23 @@ $ brew install redis
 $ brew install rabbitmq 
 `
 
-running servers
+### running servers
 
 `workon muckrack`
 `python manage.py runserver`
 `python manage.py migrate`
 
+#### muckrack
+
+`workon muckrack`
+
+`python manage.py runserver`
+
+`rabbitmq-server`
+
+`redis-server /usr/local/etc/redis.conf`
+
+`mysql.server start`
 
 ### virtualenv
 
@@ -124,4 +135,13 @@ Then to load rabbitmq now:
 Or, if you don't want/need launchctl, you can just run:
     rabbitmq-server
 
-### node 
+### redis
+
+To have launchd start redis at login:
+    ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+    
+Then to load redis now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+    
+Or, if you don't want/need launchctl, you can just run:
+    redis-server /usr/local/etc/redis.conf 
