@@ -84,6 +84,15 @@ $ brew install rabbitmq
 
 `mysql.server start`
 
+#### shorties
+
+`rabbitmq-server`
+`mysql.server start`
+`/usr/local/opt/memcached/bin/memcached -d`
+`workon shortyawards`
+`python manage.py runserver`
+
+
 ### virtualenv
 
 `
@@ -119,7 +128,7 @@ Then to load memcached now:
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
     
 Or, if you don't want/need launchctl, you can just run:
-    /usr/local/opt/memcached/bin/memcached
+    `/usr/local/opt/memcached/bin/memcached -d`
 
 ### rabbitmq
 
