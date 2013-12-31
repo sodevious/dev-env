@@ -87,9 +87,13 @@ $ brew install rabbitmq
 #### shorties
 
 `rabbitmq-server`
+
 `mysql.server start`
+
 `/usr/local/opt/memcached/bin/memcached -d`
+
 `workon shortyawards`
+
 `python manage.py runserver`
 
 
