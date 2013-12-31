@@ -163,3 +163,9 @@ Or, if you don't want/need launchctl, you can just run:
 
 # Troubleshooting
 ImportError: No module named allauth.socialaccount.providers.facebook : make sure you're on the virtualenv
+
+---
+
+# Voting commands
+
+`python manage.py make_random_link_votes --slug=kickstarter`
