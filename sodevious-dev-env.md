@@ -158,3 +158,8 @@ Then to load redis now:
     
 Or, if you don't want/need launchctl, you can just run:
     redis-server /usr/local/etc/redis.conf 
+    
+---
+
+# Troubleshooting
+ImportError: No module named allauth.socialaccount.providers.facebook : make sure you're on the virtualenv
